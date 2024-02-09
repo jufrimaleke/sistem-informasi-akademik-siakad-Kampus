@@ -1,0 +1,20 @@
+[12-Sep-2023 07:40:04 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php:3
+Stack trace:
+#0 /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php on line 3
+[12-Sep-2023 07:43:22 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php:3
+Stack trace:
+#0 /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php on line 3
+[12-Sep-2023 07:43:41 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php:3
+Stack trace:
+#0 /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php on line 3
+[12-Sep-2023 07:43:52 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php:3
+Stack trace:
+#0 /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php(3): mysqli_connect()
+#1 {main}
+  thrown in /home/stia2938/public_html/siakad.stiksmanado.ac.id/pages/dosen/views/approve/approve_aksi.php on line 3

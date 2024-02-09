@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+Options -Indexes 
+
+
+RewriteEngine On
+
+RewriteRule ^home$ index.php
+RewriteRule ^logout$ index.php

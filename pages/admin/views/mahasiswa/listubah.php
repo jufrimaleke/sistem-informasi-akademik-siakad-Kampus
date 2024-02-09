@@ -1,0 +1,86 @@
+<?php 
+
+  include "../../config/fungsi.php";
+
+  $jadwal = mysqli_query($conn, "SELECT * FROM mahasiswa
+           INNER JOIN jurusan ON mahasiswa.id_jurusan= jurusan.id_jurusan");
+ 
+  if(isset($_POST["submit"])){
+ 
+  // cek apakah  data berhasil diubah atau tidak
+  if( ubahPass($_POST) > 0 ){
+    echo "
+      <script>
+        alert('data berhasil diubah:');
+        document.location.href = '?page=ubahpass';
+      </script>
+    ";
+  } else {
+    echo "
+      <script>
+        alert('data gagal diubah:');
+        document.location.href = '?page=ubahpass';
+      </script>
+    ";
+  }
+
+}
+
+
+ ?>
+
+ <section class="content-header">
+  <h1>
+    Aprove KRS
+    <small>Control Panel</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+     <li><a href="#"> Dashboard</a></li>
+    <li class="active"> Kelas Prodi</li>
+  </ol>    
+  </section>
+
+  <section class="content">
+       <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Data Table With Full Features</h3><br><br>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form method="get">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Nim</th>
+                    <th>Nama</th>
+                    <th>Jurusan</th>
+                    <th>Aksi</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+				    <?php $no = 1; ?>
+				    <?php foreach ($jadwal as $row) : ?>
+				    <tr>
+				        <td><?= $no++ ?></td>
+				        <td><?= $row['nim'] ?></td>
+				        <td><?= $row['nama'] ?></td>
+				        <td><?= $row['nama_jurusan'] ?></td>
+				        <td>
+				            <a href="?page=ubahpass&aksi=passmhs&nim=<?= $row["nim"]; ?>" class="btn btn-success">Reset Password</a>
+				        </td>
+				    </tr>
+				    <?php endforeach; ?>
+				</tbody>
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          <!-- modal insert -->
+        
+           
+    </section>
